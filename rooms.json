@@ -1,0 +1,57 @@
+[
+    {
+        "id": 0,
+        "description": "Hello and welcome",
+        "directions": {
+            "north": 1,
+            "south": 2,
+            "east": 3,
+            "west": 4
+        }
+    },{
+        "id": 1,
+        "description": "Northen Room",
+        "directions": {
+            "north": null,
+            "south": 0,
+            "east": 5,
+            "west": null
+        }
+    },{
+        "id": 2,
+        "description": "Southern Room",
+        "directions": {
+            "north": 0,
+            "south": null,
+            "east": null,
+            "west": null
+        }
+    },{
+        "id": 3,
+        "description": "Eastern Room",
+        "directions": {
+            "north": null,
+            "south": null,
+            "east": null,
+            "west": 0
+        }
+    },{
+        "id": 4,
+        "description": "Western Room",
+        "directions": {
+            "north": null,
+            "south": null,
+            "east": 0,
+            "west": null
+        }
+    },{
+        "id": 5,
+        "description": "The you win room.",
+        "directions": {
+            "north": null,
+            "south": null,
+            "east": null,
+            "west": 0
+        }
+    }
+]
