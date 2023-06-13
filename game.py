@@ -41,5 +41,8 @@ class Game:
             exit()
         elif command == 'room':
             self.current_room.print()
+        elif self.current_room.check_commands(command):
+            self.current_room.do_command(self, command)
+            return
         print(f'I do not know how to "{command}".')
 

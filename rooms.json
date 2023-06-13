@@ -7,7 +7,8 @@
             "south": 2,
             "east": 3,
             "west": 4
-        }
+        },
+        "actions": ["interact_statue"]
     },{
         "id": 1,
         "description": "Northen Room",
