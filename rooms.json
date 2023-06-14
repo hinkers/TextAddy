@@ -53,6 +53,7 @@
             "south": null,
             "east": null,
             "west": 0
-        }
+        },
+        "actions": ["interact_fountain"]
     }
 ]

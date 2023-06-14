@@ -26,9 +26,23 @@ class InteractStatue(Interact):
     command: str = 'statue'
 
     def do_action(self, game: 'Game'):
+        game.flags.toggle('statue_activated')
         print('Interacted with statue')
 
 
+class InteractFountain(Interact):
+    command: str = 'fountain'
+
+    def do_action(self, game: 'Game'):
+        if game.flags.get('statue_activated'):
+            print('You did it!')
+            game.complete = True
+            return
+        print('Nothing interesting happens')
+        
+
+
 all_actions: dict[str, Action] = {
-    'interact_statue': InteractStatue
+    'interact_statue': InteractStatue,
+    'interact_fountain': InteractFountain
 }
